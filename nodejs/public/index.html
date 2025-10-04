@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickup-Dropoff Flow Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div>Loading pickup zones...</div>
+    </div>
+    
+    <div class="info-panel" id="infoPanel" style="display: none;">
+        <div class="info-title" id="infoTitle">Pickup Zone Flows</div>
+        <div id="flowsList"></div>
+    </div>
+    
+    <div class="instructions">
+        <strong>Instructions:</strong><br>
+        • Click on blue pickup circles to see dropoff flows<br>
+        • Click empty space to clear selection<br>
+        • Arrows show flow direction and probability
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
